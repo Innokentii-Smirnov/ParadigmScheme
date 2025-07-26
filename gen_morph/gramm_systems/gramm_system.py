@@ -55,7 +55,7 @@ class GrammaticalSystem:
                             cats[i] = cats[i].removeprefix('~')
                             implied[pos].add(cats[i])
                         if cats[i] not in properties:
-                            raise ValueError("The grammatical category '{0}' in line '{1}' is not defined.".format(cat, line))
+                            raise ValueError("The grammatical category '{0}' in line '{1}' is not defined.".format(cats[i], line))
                     categories[pos] = cats
                 elif '-/->' in line:
                     try:
